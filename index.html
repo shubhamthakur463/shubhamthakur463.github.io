@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Making Navbar Responsive</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/53d2c9a015.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- TOP NAV - STARTS -->
+    <nav class="top_nav_fixed">
+        <a href="#" class="nav_logo">ST</a>
+        <ul class="nav_links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <ul class="social_links">
+            <li><a href="https://www.facebook.com/shubham.thakur.52" target="_blank"><i class="fab fa-facebook-square nav_social_links_style"></i></a></li>
+            <li><a href="https://github.com/shubhamthakur463" target="_blank"><i class="fab fa-github-square nav_social_links_style"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/shubham-thakur-82b2a31b5/" target="_blank"><i class="fab fa-linkedin nav_social_links_style test"></i></a></li>
+        </ul>
+        
+        <!-- Menu Overlay - Mobile -->
+        <div id="overlayMenuNav" class="overlay">
+            <div class="overlay-content">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Profile</a>
+                <a href="#">Projects</a>
+                <a href="#">Contact</a>
+            </div>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeMenuNav()">&times;</i></a>
+        </div>
+        <a href="#" id="hide" class="mobile-menu-btn" onclick="openMenuNav()""><i class="fas fa-chevron-down icon-style"></i></a>
+        <!-- --------------------- -->
+
+        <a href="#" class="mobile-social-btn"><i class="fas fa-share-alt-square icon-style"></i></a>
+    </nav>
+    <!-- TOP NAV - ENDS -->
+
+
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
