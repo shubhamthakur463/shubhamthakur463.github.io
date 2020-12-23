@@ -24,6 +24,7 @@ ul, li {
 nav a {
   text-decoration: none;
   color: white;
+  padding: 5px 0px;
 }
 
 .top_nav_fixed {
