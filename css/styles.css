@@ -8,6 +8,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: gray;
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 
@@ -93,7 +94,7 @@ nav a {
 .overlay a {
     padding: 8px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.25rem;
     color: #818181;
     display: flex;
     justify-content: center;
@@ -106,12 +107,38 @@ nav a {
 }
 
 .overlay .closebtn {
-    font-size: 46px; 
+    font-size: 2.5rem; 
     color: white;
 }
 
 /* Menu Overlay for Mobile Devices - ENDS */
 /* NAVBAR  -  ENDS ------------------------------------ */
+
+
+
+
+/* LANDING SECTION - STARTS HERE ---------------------  */
+
+.landing_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  height: 680px;
+  overflow: hidden;
+}
+
+.landing_section .landing_data {
+  text-align: center;
+  color: white;
+  font-size: 3.75rem;
+  cursor: default;
+}
+
+/* LANDING SECTION - ENDS HERE -----------------------  */
+
+
+
 
 
 
@@ -131,6 +158,14 @@ nav a {
   .nav_links {
     max-width: 50%;
   }
+
+  .landing_section .landing_data {
+    font-size: 3rem;
+  }
+
+  .landing_section {
+    height: 540px;
+  } 
 }
 
 /* For Screen Sizes from 769px to 1000px */
@@ -158,10 +193,18 @@ nav a {
 
   .nav_social_links_style {
     padding: 0px 1px;
-  }  
+  }
+
+  .landing_section .landing_data {
+    font-size: 2.5rem;
+  }
+
+  .landing_section {
+    height: 420px;
+  }
 }
 
-/* For Screen Sizes from 481px to 768px */
+/* For Screen Sizes from 631px to 768px */
 @media (max-width: 768px) {
   body {
     background-color: yellowgreen;
@@ -189,7 +232,32 @@ nav a {
   .nav_social_links_style {
     padding: 0px 1px;
   }
+
+  .landing_section .landing_data {
+    font-size: 2rem;
+  }
+
+  .landing_section {
+    height: 350px;
+  }
 }
+
+/* For Screen Sizes from 481px to 630px */
+@media (max-width: 630px) {
+  body {
+    background-color: yellow;
+  }
+
+
+  .landing_section .landing_data {
+    font-size: 1.5rem;
+  }
+
+  .landing_section {
+    height: 250px;
+  }
+}
+
 
 /* For Screen Sizes upto 480px */
 @media (max-width: 480px) {
@@ -220,5 +288,13 @@ nav a {
     font-size: 24px; 
     color: white;
     padding: 0px 4px;
+  }
+
+  .landing_section .landing_data {
+    font-size: 1rem;
+  }
+
+  .landing_section {
+    height: 190px;
   }
 }
